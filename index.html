@@ -7,6 +7,9 @@
     <!--daisyUi cdn-->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+
+<!--font awesome cdn-->
+<script src="https://kit.fontawesome.com/cc24d113d5.js" crossorigin="anonymous"></script>
 <!--tailwind cdn for customized color-->
 <script>
     tailwind.config = {
@@ -36,7 +39,7 @@
 </head>
 <body class="manrope-font" >
     <header>
-        <nav>
+        <nav class="px-5 py-5 lg:px-20">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                   <div class="">
@@ -56,11 +59,12 @@
                     </div>
                    
                   </div>
-                  <a class="btn btn-ghost text-xl">Rinterio</a>
+                  
+                  <a class="btn btn-ghost text-xl"><i class="fa-solid fa-arrow-right -rotate-45 rounded-full p-1 bg-[#ABEF5F] font-extrabold"></i>Rinterio</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
+                    <li class="font-bold"><a>Home</a></li>
                     <li>
                       <a>Services</a>
                     </li>
@@ -69,8 +73,10 @@
                     <li><a>Contact Us</a></li>
                   </ul>
                 </div>
-                <div class="navbar-end">
-                  <a class="btn">Button</a>
+                <div class="navbar-end hidden lg:flex gap-2">
+                  <i class="fa-solid fa-magnifying-glass border rounded-full  p-2"></i>
+                  <i class="fa-solid fa-cart-shopping border rounded-full  p-2 text-black fill-white"></i>
+                  <a class="btn rounded-3xl bg-[#ABEF5F] font-extrabold text-lg">Book Consult<i class="fa-solid fa-arrow-right -rotate-45 text-white rounded-full p-1 bg-[#1C1C1C]"></i></a>
                 </div>
               </div>
         </nav>
